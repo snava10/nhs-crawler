@@ -11,7 +11,7 @@ A service to scrape the nhs public conditions pages. Rest endpoint to search.
   - urlparse
   - elasticsearch
   - flask
-  - mock (only tu run the tests)
+  - mock (only to run the tests)
 
 ## Usage
 - Open a console and run `python nhsWebCrawler.py <elasticsearchServer>`.
