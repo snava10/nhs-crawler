@@ -1,0 +1,87 @@
+2021-09-28T03:48:14.6177353Z ##[group]Run actions/checkout@v2
+2021-09-28T03:48:14.6178246Z with:
+2021-09-28T03:48:14.6178845Z   repository: DJSlydeezy/nhs-crawler
+2021-09-28T03:48:14.6179956Z   token: ***
+2021-09-28T03:48:14.6180473Z   ssh-strict: true
+2021-09-28T03:48:14.6181080Z   persist-credentials: true
+2021-09-28T03:48:14.6181683Z   clean: true
+2021-09-28T03:48:14.6182170Z   fetch-depth: 1
+2021-09-28T03:48:14.6182664Z   lfs: false
+2021-09-28T03:48:14.6183156Z   submodules: false
+2021-09-28T03:48:14.6183672Z ##[endgroup]
+2021-09-28T03:48:14.8713826Z Syncing repository: DJSlydeezy/nhs-crawler
+2021-09-28T03:48:14.8718026Z ##[group]Getting Git version info
+2021-09-28T03:48:14.8720808Z Working directory is '/home/runner/work/nhs-crawler/nhs-crawler'
+2021-09-28T03:48:14.8776617Z [command]/usr/bin/git version
+2021-09-28T03:48:14.8997189Z git version 2.33.0
+2021-09-28T03:48:14.9030164Z ##[endgroup]
+2021-09-28T03:48:14.9041339Z Deleting the contents of '/home/runner/work/nhs-crawler/nhs-crawler'
+2021-09-28T03:48:14.9052165Z ##[group]Initializing the repository
+2021-09-28T03:48:14.9060558Z [command]/usr/bin/git init /home/runner/work/nhs-crawler/nhs-crawler
+2021-09-28T03:48:14.9141376Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-09-28T03:48:14.9142375Z hint: is subject to change. To configure the initial branch name to use in all
+2021-09-28T03:48:14.9143308Z hint: of your new repositories, which will suppress this warning, call:
+2021-09-28T03:48:14.9143986Z hint: 
+2021-09-28T03:48:14.9144860Z hint: 	git config --global init.defaultBranch <name>
+2021-09-28T03:48:14.9145521Z hint: 
+2021-09-28T03:48:14.9146368Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-09-28T03:48:14.9147502Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-09-28T03:48:14.9148215Z hint: 
+2021-09-28T03:48:14.9148863Z hint: 	git branch -m <name>
+2021-09-28T03:48:14.9156558Z Initialized empty Git repository in /home/runner/work/nhs-crawler/nhs-crawler/.git/
+2021-09-28T03:48:14.9170762Z [command]/usr/bin/git remote add origin https://github.com/DJSlydeezy/nhs-crawler
+2021-09-28T03:48:14.9213969Z ##[endgroup]
+2021-09-28T03:48:14.9215518Z ##[group]Disabling automatic garbage collection
+2021-09-28T03:48:14.9223272Z [command]/usr/bin/git config --local gc.auto 0
+2021-09-28T03:48:14.9259371Z ##[endgroup]
+2021-09-28T03:48:15.6949145Z ##[group]Setting up auth
+2021-09-28T03:48:15.6950413Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-28T03:48:15.6951885Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-28T03:48:15.6953400Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-28T03:48:15.6955208Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-28T03:48:15.6957029Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-09-28T03:48:15.6958352Z ##[endgroup]
+2021-09-28T03:48:15.6959291Z ##[group]Fetching the repository
+2021-09-28T03:48:15.6961053Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +d44aad0f06f6d421a803bb56da99dcb64f2bdf7e:refs/remotes/origin/master
+2021-09-28T03:48:15.6962349Z remote: Enumerating objects: 15, done.        
+2021-09-28T03:48:15.6962896Z remote: Counting objects:   6% (1/15)        
+2021-09-28T03:48:15.6963389Z remote: Counting objects:  13% (2/15)        
+2021-09-28T03:48:15.6963893Z remote: Counting objects:  20% (3/15)        
+2021-09-28T03:48:15.6964383Z remote: Counting objects:  26% (4/15)        
+2021-09-28T03:48:15.6964885Z remote: Counting objects:  33% (5/15)        
+2021-09-28T03:48:15.6965374Z remote: Counting objects:  40% (6/15)        
+2021-09-28T03:48:15.6966178Z remote: Counting objects:  46% (7/15)        
+2021-09-28T03:48:15.6966693Z remote: Counting objects:  53% (8/15)        
+2021-09-28T03:48:15.6967184Z remote: Counting objects:  60% (9/15)        
+2021-09-28T03:48:15.6967689Z remote: Counting objects:  66% (10/15)        
+2021-09-28T03:48:15.6968181Z remote: Counting objects:  73% (11/15)        
+2021-09-28T03:48:15.6968683Z remote: Counting objects:  80% (12/15)        
+2021-09-28T03:48:15.6969187Z remote: Counting objects:  86% (13/15)        
+2021-09-28T03:48:15.6969674Z remote: Counting objects:  93% (14/15)        
+2021-09-28T03:48:15.6970174Z remote: Counting objects: 100% (15/15)        
+2021-09-28T03:48:15.6970686Z remote: Counting objects: 100% (15/15), done.        
+2021-09-28T03:48:15.6971242Z remote: Compressing objects:   9% (1/11)        
+2021-09-28T03:48:15.6971778Z remote: Compressing objects:  18% (2/11)        
+2021-09-28T03:48:15.6972329Z remote: Compressing objects:  27% (3/11)        
+2021-09-28T03:48:15.6972884Z remote: Compressing objects:  36% (4/11)        
+2021-09-28T03:48:15.6973427Z remote: Compressing objects:  45% (5/11)        
+2021-09-28T03:48:15.6973976Z remote: Compressing objects:  54% (6/11)        
+2021-09-28T03:48:15.6974514Z remote: Compressing objects:  63% (7/11)        
+2021-09-28T03:48:15.6975269Z remote: Compressing objects:  72% (8/11)        
+2021-09-28T03:48:15.6975826Z remote: Compressing objects:  81% (9/11)        
+2021-09-28T03:48:15.6976361Z remote: Compressing objects:  90% (10/11)        
+2021-09-28T03:48:15.6976912Z remote: Compressing objects: 100% (11/11)        
+2021-09-28T03:48:15.6977474Z remote: Compressing objects: 100% (11/11), done.        
+2021-09-28T03:48:15.6978397Z remote: Total 15 (delta 0), reused 13 (delta 0), pack-reused 0        
+2021-09-28T03:48:15.7139972Z From https://github.com/DJSlydeezy/nhs-crawler
+2021-09-28T03:48:15.7141479Z  * [new ref]         d44aad0f06f6d421a803bb56da99dcb64f2bdf7e -> origin/master
+2021-09-28T03:48:15.7175964Z ##[endgroup]
+2021-09-28T03:48:15.7177538Z ##[group]Determining the checkout info
+2021-09-28T03:48:15.7179023Z ##[endgroup]
+2021-09-28T03:48:15.7180136Z ##[group]Checking out the ref
+2021-09-28T03:48:15.7181471Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2021-09-28T03:48:15.7918337Z Reset branch 'master'
+2021-09-28T03:48:15.7919834Z Branch 'master' set up to track remote branch 'master' from 'origin'.
+2021-09-28T03:48:15.7921889Z ##[endgroup]
+2021-09-28T03:48:15.7968151Z [command]/usr/bin/git log -1 --format='%H'
+2021-09-28T03:48:15.7995276Z 'd44aad0f06f6d421a803bb56da99dcb64f2bdf7e'
