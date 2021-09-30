@@ -1,0 +1,36 @@
+2021-09-28T03:48:15.8985898Z ##[group]Run python -m pip install --upgrade pip
+2021-09-28T03:48:15.8986681Z [36;1mpython -m pip install --upgrade pip[0m
+2021-09-28T03:48:15.8987290Z [36;1mpip install flake8 pytest[0m
+2021-09-28T03:48:15.8988015Z [36;1mif [ -f requirements.txt ]; then pip install -r requirements.txt; fi[0m
+2021-09-28T03:48:15.9038710Z shell: /usr/bin/bash -e {0}
+2021-09-28T03:48:15.9039172Z env:
+2021-09-28T03:48:15.9039740Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.7/x64
+2021-09-28T03:48:15.9040526Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.7/x64/lib
+2021-09-28T03:48:15.9041093Z ##[endgroup]
+2021-09-28T03:48:18.5576790Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages (21.2.4)
+2021-09-28T03:48:19.8471697Z Collecting flake8
+2021-09-28T03:48:19.9124585Z   Downloading flake8-3.9.2-py2.py3-none-any.whl (73 kB)
+2021-09-28T03:48:20.0889402Z Collecting pytest
+2021-09-28T03:48:20.1102435Z   Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+2021-09-28T03:48:20.2166281Z Collecting pyflakes<2.4.0,>=2.3.0
+2021-09-28T03:48:20.2303700Z   Downloading pyflakes-2.3.1-py2.py3-none-any.whl (68 kB)
+2021-09-28T03:48:20.2698227Z Collecting mccabe<0.7.0,>=0.6.0
+2021-09-28T03:48:20.2795501Z   Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+2021-09-28T03:48:20.3135892Z Collecting pycodestyle<2.8.0,>=2.7.0
+2021-09-28T03:48:20.3272422Z   Downloading pycodestyle-2.7.0-py2.py3-none-any.whl (41 kB)
+2021-09-28T03:48:20.4057569Z Collecting packaging
+2021-09-28T03:48:20.4156139Z   Downloading packaging-21.0-py3-none-any.whl (40 kB)
+2021-09-28T03:48:20.4643408Z Collecting attrs>=19.2.0
+2021-09-28T03:48:20.4766618Z   Downloading attrs-21.2.0-py2.py3-none-any.whl (53 kB)
+2021-09-28T03:48:20.5075894Z Collecting iniconfig
+2021-09-28T03:48:20.5192536Z   Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2021-09-28T03:48:20.5759844Z Collecting py>=1.8.2
+2021-09-28T03:48:20.5990882Z   Downloading py-1.10.0-py2.py3-none-any.whl (97 kB)
+2021-09-28T03:48:20.6416609Z Collecting pluggy<2.0,>=0.12
+2021-09-28T03:48:20.6526202Z   Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2021-09-28T03:48:20.6826874Z Collecting toml
+2021-09-28T03:48:20.6953091Z   Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2021-09-28T03:48:20.8472722Z Collecting pyparsing>=2.0.2
+2021-09-28T03:48:20.8625635Z   Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+2021-09-28T03:48:20.9891081Z Installing collected packages: pyparsing, toml, pyflakes, pycodestyle, py, pluggy, packaging, mccabe, iniconfig, attrs, pytest, flake8
+2021-09-28T03:48:21.6161775Z Successfully installed attrs-21.2.0 flake8-3.9.2 iniconfig-1.1.1 mccabe-0.6.1 packaging-21.0 pluggy-1.0.0 py-1.10.0 pycodestyle-2.7.0 pyflakes-2.3.1 pyparsing-2.4.7 pytest-6.2.5 toml-0.10.2
