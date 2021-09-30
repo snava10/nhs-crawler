@@ -1,0 +1,419 @@
+2021-09-28T03:48:04.2964206Z Found online and idle hosted runner in the current repository's organization account that matches the required labels: 'ubuntu-latest'
+2021-09-28T03:48:04.3948361Z Waiting for a Hosted runner in the 'organization' to pick this job...
+2021-09-28T03:48:04.5869983Z Job is waiting for a hosted runner to come online.
+2021-09-28T03:48:09.6364228Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2021-09-28T03:48:11.9133683Z Current runner version: '2.283.1'
+2021-09-28T03:48:11.9165133Z ##[group]Operating System
+2021-09-28T03:48:11.9166259Z Ubuntu
+2021-09-28T03:48:11.9166737Z 20.04.3
+2021-09-28T03:48:11.9167272Z LTS
+2021-09-28T03:48:11.9167891Z ##[endgroup]
+2021-09-28T03:48:11.9168494Z ##[group]Virtual Environment
+2021-09-28T03:48:11.9169260Z Environment: ubuntu-20.04
+2021-09-28T03:48:11.9169848Z Version: 20210919.1
+2021-09-28T03:48:11.9170968Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210919.1/images/linux/Ubuntu2004-README.md
+2021-09-28T03:48:11.9172504Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20210919.1
+2021-09-28T03:48:11.9173435Z ##[endgroup]
+2021-09-28T03:48:11.9174154Z ##[group]Virtual Environment Provisioner
+2021-09-28T03:48:11.9175140Z 1.0.0.0-master-20210914-1
+2021-09-28T03:48:11.9175771Z ##[endgroup]
+2021-09-28T03:48:11.9178016Z ##[group]GITHUB_TOKEN Permissions
+2021-09-28T03:48:11.9179679Z Actions: write
+2021-09-28T03:48:11.9180397Z Checks: write
+2021-09-28T03:48:11.9180983Z Contents: write
+2021-09-28T03:48:11.9181606Z Deployments: write
+2021-09-28T03:48:11.9182270Z Discussions: write
+2021-09-28T03:48:11.9182823Z Issues: write
+2021-09-28T03:48:11.9183431Z Metadata: read
+2021-09-28T03:48:11.9183977Z Packages: write
+2021-09-28T03:48:11.9184636Z PullRequests: write
+2021-09-28T03:48:11.9185377Z RepositoryProjects: write
+2021-09-28T03:48:11.9186056Z SecurityEvents: write
+2021-09-28T03:48:11.9186694Z Statuses: write
+2021-09-28T03:48:11.9187473Z ##[endgroup]
+2021-09-28T03:48:11.9191083Z Prepare workflow directory
+2021-09-28T03:48:11.9939292Z Prepare all required actions
+2021-09-28T03:48:11.9950962Z Getting action download info
+2021-09-28T03:48:12.2781688Z Download action repository 'actions/checkout@v2' (SHA:5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+2021-09-28T03:48:14.1434166Z Download action repository 'actions/setup-python@v2' (SHA:dc73133d4da04e56a135ae2246682783cc7c7cb6)
+2021-09-28T03:48:14.6177395Z ##[group]Run actions/checkout@v2
+2021-09-28T03:48:14.6178263Z with:
+2021-09-28T03:48:14.6178853Z   repository: DJSlydeezy/nhs-crawler
+2021-09-28T03:48:14.6179967Z   token: ***
+2021-09-28T03:48:14.6180480Z   ssh-strict: true
+2021-09-28T03:48:14.6181087Z   persist-credentials: true
+2021-09-28T03:48:14.6181689Z   clean: true
+2021-09-28T03:48:14.6182176Z   fetch-depth: 1
+2021-09-28T03:48:14.6182670Z   lfs: false
+2021-09-28T03:48:14.6183162Z   submodules: false
+2021-09-28T03:48:14.6183678Z ##[endgroup]
+2021-09-28T03:48:14.8713892Z Syncing repository: DJSlydeezy/nhs-crawler
+2021-09-28T03:48:14.8718060Z ##[group]Getting Git version info
+2021-09-28T03:48:14.8720848Z Working directory is '/home/runner/work/nhs-crawler/nhs-crawler'
+2021-09-28T03:48:14.8776655Z [command]/usr/bin/git version
+2021-09-28T03:48:14.8997290Z git version 2.33.0
+2021-09-28T03:48:14.9030204Z ##[endgroup]
+2021-09-28T03:48:14.9041380Z Deleting the contents of '/home/runner/work/nhs-crawler/nhs-crawler'
+2021-09-28T03:48:14.9052355Z ##[group]Initializing the repository
+2021-09-28T03:48:14.9060598Z [command]/usr/bin/git init /home/runner/work/nhs-crawler/nhs-crawler
+2021-09-28T03:48:14.9141416Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-09-28T03:48:14.9142384Z hint: is subject to change. To configure the initial branch name to use in all
+2021-09-28T03:48:14.9143316Z hint: of your new repositories, which will suppress this warning, call:
+2021-09-28T03:48:14.9143994Z hint: 
+2021-09-28T03:48:14.9144874Z hint: 	git config --global init.defaultBranch <name>
+2021-09-28T03:48:14.9145527Z hint: 
+2021-09-28T03:48:14.9146379Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-09-28T03:48:14.9147514Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-09-28T03:48:14.9148222Z hint: 
+2021-09-28T03:48:14.9148874Z hint: 	git branch -m <name>
+2021-09-28T03:48:14.9158571Z Initialized empty Git repository in /home/runner/work/nhs-crawler/nhs-crawler/.git/
+2021-09-28T03:48:14.9170802Z [command]/usr/bin/git remote add origin https://github.com/DJSlydeezy/nhs-crawler
+2021-09-28T03:48:14.9214005Z ##[endgroup]
+2021-09-28T03:48:14.9215534Z ##[group]Disabling automatic garbage collection
+2021-09-28T03:48:14.9223311Z [command]/usr/bin/git config --local gc.auto 0
+2021-09-28T03:48:14.9259406Z ##[endgroup]
+2021-09-28T03:48:15.6949236Z ##[group]Setting up auth
+2021-09-28T03:48:15.6950431Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-28T03:48:15.6951897Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-28T03:48:15.6953412Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-28T03:48:15.6955238Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-28T03:48:15.6957041Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-09-28T03:48:15.6958361Z ##[endgroup]
+2021-09-28T03:48:15.6959299Z ##[group]Fetching the repository
+2021-09-28T03:48:15.6961069Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +d44aad0f06f6d421a803bb56da99dcb64f2bdf7e:refs/remotes/origin/master
+2021-09-28T03:48:15.6962355Z remote: Enumerating objects: 15, done.        
+2021-09-28T03:48:15.6962901Z remote: Counting objects:   6% (1/15)        
+2021-09-28T03:48:15.6963394Z remote: Counting objects:  13% (2/15)        
+2021-09-28T03:48:15.6963898Z remote: Counting objects:  20% (3/15)        
+2021-09-28T03:48:15.6964388Z remote: Counting objects:  26% (4/15)        
+2021-09-28T03:48:15.6964890Z remote: Counting objects:  33% (5/15)        
+2021-09-28T03:48:15.6965643Z remote: Counting objects:  40% (6/15)        
+2021-09-28T03:48:15.6966184Z remote: Counting objects:  46% (7/15)        
+2021-09-28T03:48:15.6966698Z remote: Counting objects:  53% (8/15)        
+2021-09-28T03:48:15.6967189Z remote: Counting objects:  60% (9/15)        
+2021-09-28T03:48:15.6967695Z remote: Counting objects:  66% (10/15)        
+2021-09-28T03:48:15.6968186Z remote: Counting objects:  73% (11/15)        
+2021-09-28T03:48:15.6968688Z remote: Counting objects:  80% (12/15)        
+2021-09-28T03:48:15.6969192Z remote: Counting objects:  86% (13/15)        
+2021-09-28T03:48:15.6969679Z remote: Counting objects:  93% (14/15)        
+2021-09-28T03:48:15.6970179Z remote: Counting objects: 100% (15/15)        
+2021-09-28T03:48:15.6970691Z remote: Counting objects: 100% (15/15), done.        
+2021-09-28T03:48:15.6971247Z remote: Compressing objects:   9% (1/11)        
+2021-09-28T03:48:15.6971797Z remote: Compressing objects:  18% (2/11)        
+2021-09-28T03:48:15.6972341Z remote: Compressing objects:  27% (3/11)        
+2021-09-28T03:48:15.6972890Z remote: Compressing objects:  36% (4/11)        
+2021-09-28T03:48:15.6973432Z remote: Compressing objects:  45% (5/11)        
+2021-09-28T03:48:15.6973981Z remote: Compressing objects:  54% (6/11)        
+2021-09-28T03:48:15.6974520Z remote: Compressing objects:  63% (7/11)        
+2021-09-28T03:48:15.6975280Z remote: Compressing objects:  72% (8/11)        
+2021-09-28T03:48:15.6975832Z remote: Compressing objects:  81% (9/11)        
+2021-09-28T03:48:15.6976366Z remote: Compressing objects:  90% (10/11)        
+2021-09-28T03:48:15.6976917Z remote: Compressing objects: 100% (11/11)        
+2021-09-28T03:48:15.6977480Z remote: Compressing objects: 100% (11/11), done.        
+2021-09-28T03:48:15.6978408Z remote: Total 15 (delta 0), reused 13 (delta 0), pack-reused 0        
+2021-09-28T03:48:15.7140014Z From https://github.com/DJSlydeezy/nhs-crawler
+2021-09-28T03:48:15.7141502Z  * [new ref]         d44aad0f06f6d421a803bb56da99dcb64f2bdf7e -> origin/master
+2021-09-28T03:48:15.7176025Z ##[endgroup]
+2021-09-28T03:48:15.7177559Z ##[group]Determining the checkout info
+2021-09-28T03:48:15.7179038Z ##[endgroup]
+2021-09-28T03:48:15.7180149Z ##[group]Checking out the ref
+2021-09-28T03:48:15.7181492Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2021-09-28T03:48:15.7918408Z Reset branch 'master'
+2021-09-28T03:48:15.7919861Z Branch 'master' set up to track remote branch 'master' from 'origin'.
+2021-09-28T03:48:15.7921911Z ##[endgroup]
+2021-09-28T03:48:15.7968193Z [command]/usr/bin/git log -1 --format='%H'
+2021-09-28T03:48:15.7995314Z 'd44aad0f06f6d421a803bb56da99dcb64f2bdf7e'
+2021-09-28T03:48:15.8179611Z ##[group]Run actions/setup-python@v2
+2021-09-28T03:48:15.8180131Z with:
+2021-09-28T03:48:15.8180518Z   python-version: 3.9
+2021-09-28T03:48:15.8181395Z   token: ***
+2021-09-28T03:48:15.8181756Z ##[endgroup]
+2021-09-28T03:48:15.8798071Z Successfully setup CPython (3.9.7)
+2021-09-28T03:48:15.8985935Z ##[group]Run python -m pip install --upgrade pip
+2021-09-28T03:48:15.8986691Z [36;1mpython -m pip install --upgrade pip[0m
+2021-09-28T03:48:15.8987297Z [36;1mpip install flake8 pytest[0m
+2021-09-28T03:48:15.8988038Z [36;1mif [ -f requirements.txt ]; then pip install -r requirements.txt; fi[0m
+2021-09-28T03:48:15.9038740Z shell: /usr/bin/bash -e {0}
+2021-09-28T03:48:15.9039179Z env:
+2021-09-28T03:48:15.9039747Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.7/x64
+2021-09-28T03:48:15.9040532Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.7/x64/lib
+2021-09-28T03:48:15.9041099Z ##[endgroup]
+2021-09-28T03:48:18.5577203Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.7/x64/lib/python3.9/site-packages (21.2.4)
+2021-09-28T03:48:19.8472065Z Collecting flake8
+2021-09-28T03:48:19.9124709Z   Downloading flake8-3.9.2-py2.py3-none-any.whl (73 kB)
+2021-09-28T03:48:20.0889523Z Collecting pytest
+2021-09-28T03:48:20.1102765Z   Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+2021-09-28T03:48:20.2166386Z Collecting pyflakes<2.4.0,>=2.3.0
+2021-09-28T03:48:20.2303760Z   Downloading pyflakes-2.3.1-py2.py3-none-any.whl (68 kB)
+2021-09-28T03:48:20.2698296Z Collecting mccabe<0.7.0,>=0.6.0
+2021-09-28T03:48:20.2795538Z   Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+2021-09-28T03:48:20.3136043Z Collecting pycodestyle<2.8.0,>=2.7.0
+2021-09-28T03:48:20.3272460Z   Downloading pycodestyle-2.7.0-py2.py3-none-any.whl (41 kB)
+2021-09-28T03:48:20.4057665Z Collecting packaging
+2021-09-28T03:48:20.4156220Z   Downloading packaging-21.0-py3-none-any.whl (40 kB)
+2021-09-28T03:48:20.4643520Z Collecting attrs>=19.2.0
+2021-09-28T03:48:20.4766796Z   Downloading attrs-21.2.0-py2.py3-none-any.whl (53 kB)
+2021-09-28T03:48:20.5076001Z Collecting iniconfig
+2021-09-28T03:48:20.5192609Z   Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2021-09-28T03:48:20.5759961Z Collecting py>=1.8.2
+2021-09-28T03:48:20.5991035Z   Downloading py-1.10.0-py2.py3-none-any.whl (97 kB)
+2021-09-28T03:48:20.6416656Z Collecting pluggy<2.0,>=0.12
+2021-09-28T03:48:20.6526226Z   Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2021-09-28T03:48:20.6826904Z Collecting toml
+2021-09-28T03:48:20.6953115Z   Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2021-09-28T03:48:20.8472770Z Collecting pyparsing>=2.0.2
+2021-09-28T03:48:20.8625659Z   Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+2021-09-28T03:48:20.9891136Z Installing collected packages: pyparsing, toml, pyflakes, pycodestyle, py, pluggy, packaging, mccabe, iniconfig, attrs, pytest, flake8
+2021-09-28T03:48:21.6161826Z Successfully installed attrs-21.2.0 flake8-3.9.2 iniconfig-1.1.1 mccabe-0.6.1 packaging-21.0 pluggy-1.0.0 py-1.10.0 pycodestyle-2.7.0 pyflakes-2.3.1 pyparsing-2.4.7 pytest-6.2.5 toml-0.10.2
+2021-09-28T03:48:21.8257069Z ##[group]Run # stop the build if there are Python syntax errors or undefined names
+2021-09-28T03:48:21.8258077Z [36;1m# stop the build if there are Python syntax errors or undefined names[0m
+2021-09-28T03:48:21.8258894Z [36;1mflake8 . --count --select=E9,F63,F7,F82 --show-source --statistics[0m
+2021-09-28T03:48:21.8259714Z [36;1m# exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide[0m
+2021-09-28T03:48:21.8260828Z [36;1mflake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics[0m
+2021-09-28T03:48:21.8305511Z shell: /usr/bin/bash -e {0}
+2021-09-28T03:48:21.8305921Z env:
+2021-09-28T03:48:21.8306481Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.7/x64
+2021-09-28T03:48:21.8307239Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.7/x64/lib
+2021-09-28T03:48:21.8307797Z ##[endgroup]
+2021-09-28T03:48:22.4329774Z 0
+2021-09-28T03:48:22.6621986Z ./tests.py:4:1: F403 'from webApi import *' used; unable to detect undefined names
+2021-09-28T03:48:22.6623581Z ./tests.py:6:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6624535Z ./tests.py:7:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6625524Z ./tests.py:8:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6626384Z ./tests.py:9:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6627341Z ./tests.py:9:3: E122 continuation line missing indentation or outdented
+2021-09-28T03:48:22.6628333Z ./tests.py:10:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6629484Z ./tests.py:10:18: E231 missing whitespace after ':'
+2021-09-28T03:48:22.6630440Z ./tests.py:11:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6631505Z ./tests.py:11:13: E203 whitespace before ':'
+2021-09-28T03:48:22.6632431Z ./tests.py:12:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6633532Z ./tests.py:12:26: E231 missing whitespace after ','
+2021-09-28T03:48:22.6635823Z ./tests.py:13:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6640705Z ./tests.py:14:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6641313Z ./tests.py:15:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6642234Z ./tests.py:15:10: E231 missing whitespace after ':'
+2021-09-28T03:48:22.6642837Z ./tests.py:16:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6643436Z ./tests.py:17:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6644335Z ./tests.py:17:3: F405 'es' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6645402Z ./tests.py:17:31: F405 'indexName' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6646478Z ./tests.py:17:51: F405 'docType' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6647206Z ./tests.py:18:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6648109Z ./tests.py:18:3: F405 'es' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6648818Z ./tests.py:19:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6649725Z ./tests.py:19:3: F405 'search' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6650456Z ./tests.py:20:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6651341Z ./tests.py:20:3: F405 'es' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6652386Z ./tests.py:20:38: F405 'indexName' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6653447Z ./tests.py:20:58: F405 'docType' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6654176Z ./tests.py:22:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6655178Z ./tests.py:23:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6656163Z ./tests.py:23:3: F405 'es' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6657208Z ./tests.py:23:31: F405 'indexName' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6658277Z ./tests.py:23:51: F405 'docType' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6658995Z ./tests.py:24:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6660166Z ./tests.py:24:3: F405 'es' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6660905Z ./tests.py:25:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6661876Z ./tests.py:25:9: F405 'search' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6662599Z ./tests.py:26:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6663913Z ./tests.py:26:26: F405 'noResultsMessage' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6665919Z ./tests.py:28:1: E305 expected 2 blank lines after class or function definition, found 1
+2021-09-28T03:48:22.6666745Z ./tests.py:29:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6667940Z ./tests.py:29:20: W292 no newline at end of file
+2021-09-28T03:48:22.6668889Z ./webApi.py:3:1: E265 block comment should start with '# '
+2021-09-28T03:48:22.6669543Z ./webApi.py:13:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6670215Z ./webApi.py:17:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6670853Z ./webApi.py:19:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6671551Z ./webApi.py:19:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6672404Z ./webApi.py:19:2: E117 over-indented
+2021-09-28T03:48:22.6673004Z ./webApi.py:20:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6673705Z ./webApi.py:20:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6674389Z ./webApi.py:21:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6675084Z ./webApi.py:21:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6675960Z ./webApi.py:21:17: E231 missing whitespace after ':'
+2021-09-28T03:48:22.6676613Z ./webApi.py:22:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6677312Z ./webApi.py:22:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6678148Z ./webApi.py:22:12: E203 whitespace before ':'
+2021-09-28T03:48:22.6678777Z ./webApi.py:23:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6679470Z ./webApi.py:23:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6680353Z ./webApi.py:23:25: E231 missing whitespace after ','
+2021-09-28T03:48:22.6681005Z ./webApi.py:24:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6681692Z ./webApi.py:24:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6682387Z ./webApi.py:25:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6683074Z ./webApi.py:25:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6683762Z ./webApi.py:26:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6684479Z ./webApi.py:26:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6685381Z ./webApi.py:26:9: E231 missing whitespace after ':'
+2021-09-28T03:48:22.6686040Z ./webApi.py:27:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6686743Z ./webApi.py:27:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6687424Z ./webApi.py:28:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6688119Z ./webApi.py:28:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6688797Z ./webApi.py:29:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6689493Z ./webApi.py:29:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6690183Z ./webApi.py:30:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6690860Z ./webApi.py:30:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6691561Z ./webApi.py:31:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6692239Z ./webApi.py:31:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6693083Z ./webApi.py:31:3: E117 over-indented
+2021-09-28T03:48:22.6693685Z ./webApi.py:32:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6694383Z ./webApi.py:32:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6695483Z ./webApi.py:32:4: E117 over-indented
+2021-09-28T03:48:22.6696084Z ./webApi.py:33:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6696980Z ./webApi.py:33:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6697697Z ./webApi.py:34:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6698388Z ./webApi.py:34:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6699394Z ./webApi.py:34:2: F841 local variable 'e' is assigned to but never used
+2021-09-28T03:48:22.6700080Z ./webApi.py:35:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6700914Z ./webApi.py:35:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6701765Z ./webApi.py:35:3: E117 over-indented
+2021-09-28T03:48:22.6702381Z ./webApi.py:36:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6703076Z ./webApi.py:36:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6703752Z ./webApi.py:37:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6704447Z ./webApi.py:37:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6705597Z ./webApi.py:37:3: E117 over-indented
+2021-09-28T03:48:22.6706275Z ./webApi.py:38:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6706957Z ./webApi.py:38:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6707652Z ./webApi.py:39:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6708473Z ./webApi.py:39:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6709363Z ./webApi.py:39:3: E117 over-indented
+2021-09-28T03:48:22.6709963Z ./webApi.py:40:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6710620Z ./webApi.py:40:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6711308Z ./webApi.py:40:1: W293 blank line contains whitespace
+2021-09-28T03:48:22.6711940Z ./webApi.py:42:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6712595Z ./webApi.py:42:1: E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6713229Z ./webApi.py:42:2: E303 too many blank lines (2)
+2021-09-28T03:48:22.6713773Z ./webApi.py:46:24: W292 no newline at end of file
+2021-09-28T03:48:22.6714444Z ./nhsWebScraper.py:9:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6715190Z ./nhsWebScraper.py:10:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6716114Z ./nhsWebScraper.py:10:19: E231 missing whitespace after ','
+2021-09-28T03:48:22.6717035Z ./nhsWebScraper.py:10:25: E231 missing whitespace after ','
+2021-09-28T03:48:22.6717939Z ./nhsWebScraper.py:10:29: E231 missing whitespace after ','
+2021-09-28T03:48:22.6718698Z ./nhsWebScraper.py:11:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6719439Z ./nhsWebScraper.py:12:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6720159Z ./nhsWebScraper.py:13:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6720892Z ./nhsWebScraper.py:15:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6721610Z ./nhsWebScraper.py:16:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6722356Z ./nhsWebScraper.py:18:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6723271Z ./nhsWebScraper.py:18:35: E231 missing whitespace after ','
+2021-09-28T03:48:22.6724349Z ./nhsWebScraper.py:18:43: E231 missing whitespace after ','
+2021-09-28T03:48:22.6725126Z ./nhsWebScraper.py:19:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6725871Z ./nhsWebScraper.py:20:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6726756Z ./nhsWebScraper.py:21:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6727658Z ./nhsWebScraper.py:21:26: E231 missing whitespace after ','
+2021-09-28T03:48:22.6728409Z ./nhsWebScraper.py:22:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6729327Z ./nhsWebScraper.py:22:22: E231 missing whitespace after ','
+2021-09-28T03:48:22.6730057Z ./nhsWebScraper.py:23:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6730797Z ./nhsWebScraper.py:24:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6731516Z ./nhsWebScraper.py:25:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6732247Z ./nhsWebScraper.py:27:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6733172Z ./nhsWebScraper.py:27:19: E231 missing whitespace after ','
+2021-09-28T03:48:22.6734128Z ./nhsWebScraper.py:29:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6735215Z ./nhsWebScraper.py:30:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6735940Z ./nhsWebScraper.py:31:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6736957Z ./nhsWebScraper.py:31:42: E231 missing whitespace after ','
+2021-09-28T03:48:22.6737865Z ./nhsWebScraper.py:31:57: E231 missing whitespace after ','
+2021-09-28T03:48:22.6738786Z ./nhsWebScraper.py:32:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6739520Z ./nhsWebScraper.py:33:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6740236Z ./nhsWebScraper.py:34:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6740971Z ./nhsWebScraper.py:35:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6741694Z ./nhsWebScraper.py:36:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6742427Z ./nhsWebScraper.py:37:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6743389Z ./nhsWebScraper.py:37:27: E231 missing whitespace after ','
+2021-09-28T03:48:22.6744121Z ./nhsWebScraper.py:38:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6745040Z ./nhsWebScraper.py:38:23: E231 missing whitespace after ','
+2021-09-28T03:48:22.6745765Z ./nhsWebScraper.py:39:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6746495Z ./nhsWebScraper.py:40:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6747225Z ./nhsWebScraper.py:41:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6748139Z ./nhsWebScraper.py:41:26: E231 missing whitespace after ','
+2021-09-28T03:48:22.6748882Z ./nhsWebScraper.py:45:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6749596Z ./nhsWebScraper.py:46:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6750310Z ./nhsWebScraper.py:46:63: W291 trailing whitespace
+2021-09-28T03:48:22.6751009Z ./nhsWebScraper.py:47:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6752054Z ./nhsWebScraper.py:47:4: E128 continuation line under-indented for visual indent
+2021-09-28T03:48:22.6752927Z ./nhsWebScraper.py:49:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6753654Z ./nhsWebScraper.py:50:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6754416Z ./nhsWebScraper.py:52:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6755139Z ./nhsWebScraper.py:53:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6756071Z ./nhsWebScraper.py:53:2: E265 block comment should start with '# '
+2021-09-28T03:48:22.6756829Z ./nhsWebScraper.py:54:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6757732Z ./nhsWebScraper.py:54:30: E231 missing whitespace after ','
+2021-09-28T03:48:22.6758468Z ./nhsWebScraper.py:55:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6759187Z ./nhsWebScraper.py:56:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6759936Z ./nhsWebScraper.py:58:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6760857Z ./nhsWebScraper.py:58:2: E265 block comment should start with '# '
+2021-09-28T03:48:22.6761587Z ./nhsWebScraper.py:59:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6762625Z ./nhsWebScraper.py:59:17: W605 invalid escape sequence '\s'
+2021-09-28T03:48:22.6763556Z ./nhsWebScraper.py:59:21: E231 missing whitespace after ','
+2021-09-28T03:48:22.6764502Z ./nhsWebScraper.py:59:25: E231 missing whitespace after ','
+2021-09-28T03:48:22.6765805Z ./nhsWebScraper.py:61:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6766576Z ./nhsWebScraper.py:63:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6767660Z ./nhsWebScraper.py:63:19: E231 missing whitespace after ','
+2021-09-28T03:48:22.6768413Z ./nhsWebScraper.py:64:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6769463Z ./nhsWebScraper.py:64:40: E231 missing whitespace after ','
+2021-09-28T03:48:22.6770385Z ./nhsWebScraper.py:64:44: E231 missing whitespace after ','
+2021-09-28T03:48:22.6771120Z ./nhsWebScraper.py:66:1: E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6771866Z ./nhsWebScraper.py:67:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6772582Z ./nhsWebScraper.py:68:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6773484Z ./nhsWebScraper.py:69:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6774237Z ./nhsWebScraper.py:71:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6775379Z ./nhsWebScraper.py:72:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6776529Z ./nhsWebScraper.py:72:48: E231 missing whitespace after ','
+2021-09-28T03:48:22.6777285Z ./nhsWebScraper.py:74:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6778448Z ./nhsWebScraper.py:74:27: E231 missing whitespace after ','
+2021-09-28T03:48:22.6779200Z ./nhsWebScraper.py:75:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6780068Z ./nhsWebScraper.py:76:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6780800Z ./nhsWebScraper.py:77:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6781514Z ./nhsWebScraper.py:78:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6782244Z ./nhsWebScraper.py:79:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6782956Z ./nhsWebScraper.py:80:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6783711Z ./nhsWebScraper.py:80:1: W293 blank line contains whitespace
+2021-09-28T03:48:22.6784462Z ./nhsWebScraper.py:81:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6785182Z ./nhsWebScraper.py:82:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6785914Z ./nhsWebScraper.py:83:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6787306Z ./nhsWebScraper.py:85:1: E305 expected 2 blank lines after class or function definition, found 1
+2021-09-28T03:48:22.6788255Z ./nhsWebScraper.py:86:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6789016Z ./nhsWebScraper.py:87:1: W191 indentation contains tabs
+2021-09-28T03:48:22.6789791Z ./nhsWebScraper.py:87:1: W293 blank line contains whitespace
+2021-09-28T03:48:22.6790632Z ./nhsWebScraper.py:87:2: W292 no newline at end of file
+2021-09-28T03:48:22.6791295Z 24    E101 indentation contains mixed spaces and tabs
+2021-09-28T03:48:22.6792094Z 6     E117 over-indented
+2021-09-28T03:48:22.6796141Z 1     E122 continuation line missing indentation or outdented
+2021-09-28T03:48:22.6797271Z 1     E128 continuation line under-indented for visual indent
+2021-09-28T03:48:22.6798033Z 2     E203 whitespace before ':'
+2021-09-28T03:48:22.6798805Z 27    E231 missing whitespace after ','
+2021-09-28T03:48:22.6799468Z 3     E265 block comment should start with '# '
+2021-09-28T03:48:22.6799993Z 9     E302 expected 2 blank lines, found 1
+2021-09-28T03:48:22.6800459Z 1     E303 too many blank lines (2)
+2021-09-28T03:48:22.6801065Z 2     E305 expected 2 blank lines after class or function definition, found 1
+2021-09-28T03:48:22.6801998Z 1     F403 'from webApi import *' used; unable to detect undefined names
+2021-09-28T03:48:22.6802871Z 14    F405 'es' may be undefined, or defined from star imports: webApi
+2021-09-28T03:48:22.6803701Z 1     F841 local variable 'e' is assigned to but never used
+2021-09-28T03:48:22.6804251Z 98    W191 indentation contains tabs
+2021-09-28T03:48:22.6804744Z 1     W291 trailing whitespace
+2021-09-28T03:48:22.6805218Z 3     W292 no newline at end of file
+2021-09-28T03:48:22.6805703Z 3     W293 blank line contains whitespace
+2021-09-28T03:48:22.6806391Z 1     W605 invalid escape sequence '\s'
+2021-09-28T03:48:22.6806787Z 198
+2021-09-28T03:48:22.6847489Z ##[group]Run pytest
+2021-09-28T03:48:22.6848008Z [36;1mpytest[0m
+2021-09-28T03:48:22.6891633Z shell: /usr/bin/bash -e {0}
+2021-09-28T03:48:22.6892028Z env:
+2021-09-28T03:48:22.6892550Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.7/x64
+2021-09-28T03:48:22.6893258Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.7/x64/lib
+2021-09-28T03:48:22.6893789Z ##[endgroup]
+2021-09-28T03:48:22.8943466Z ============================= test session starts ==============================
+2021-09-28T03:48:22.8945206Z platform linux -- Python 3.9.7, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
+2021-09-28T03:48:22.8947180Z rootdir: /home/runner/work/nhs-crawler/nhs-crawler
+2021-09-28T03:48:22.8947735Z collected 0 items
+2021-09-28T03:48:22.8948006Z 
+2021-09-28T03:48:22.8948389Z ============================ no tests ran in 0.01s =============================
+2021-09-28T03:48:22.9131301Z ##[error]Process completed with exit code 5.
+2021-09-28T03:48:22.9217784Z Post job cleanup.
+2021-09-28T03:48:23.0290280Z [command]/usr/bin/git version
+2021-09-28T03:48:23.0345211Z git version 2.33.0
+2021-09-28T03:48:23.0385857Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-28T03:48:23.0425844Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-28T03:48:23.0665701Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-28T03:48:23.0689951Z http.https://github.com/.extraheader
+2021-09-28T03:48:23.0755181Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-09-28T03:48:23.0782488Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-28T03:48:23.1137927Z Cleaning up orphan processes
