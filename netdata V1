@@ -1,0 +1,37 @@
+
+Version: netdata v1.31.0-329-nightly
+Configure options:  '--prefix=/usr' '--sysconfdir=/etc' '--localstatedir=/var' '--libexecdir=/usr/libexec' '--libdir=/usr/lib' '--with-zlib' '--with-math' '--with-user=netdata' '--with-bundled-lws' '--with-bundled-protobuf' 'CFLAGS=-O2' 'LDFLAGS='
+Features:
+    dbengine:                   YES
+    Native HTTPS:               YES
+    Netdata Cloud:              YES 
+    ACLK Next Generation:       YES
+    ACLK-NG New Cloud Protocol: YES
+    ACLK Legacy:                YES
+    TLS Host Verification:      YES
+Libraries:
+    jemalloc:                NO
+    JSON-C:                  YES
+    libcap:                  NO
+    libcrypto:               YES
+    libm:                    YES
+    LWS:                     YES static v3.2.2
+    mosquitto:               YES
+    tcalloc:                 NO
+    zlib:                    YES
+Plugins:
+    apps:                    YES
+    cgroup Network Tracking: YES
+    CUPS:                    NO
+    EBPF:                    NO
+    IPMI:                    NO
+    NFACCT:                  NO
+    perf:                    YES
+    slabinfo:                YES
+    Xen:                     NO
+    Xen VBD Error Tracking:  NO
+Exporters:
+    AWS Kinesis:             NO
+    GCP PubSub:              NO
+    MongoDB:                 NO
+    Prometheus Remote Write: NO
