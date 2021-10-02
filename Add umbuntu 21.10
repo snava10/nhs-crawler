@@ -1,5 +1,5 @@
 
- C
+ 
 CFLAGS='-O1  -WWformat-signedness -fstack-protector-all -fno-common -DNETDATA_INTERNAL_CHECKS=1 -D_FORTIFY_SOURCE=2 -DNETDATA_VERIFY_LOCKS=1'
 Job log
  
