@@ -1,0 +1,5 @@
+await octokit.request('GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses', {
+  owner: 'octocat',
+  repo: 'hello-world',
+  deployment_id: 42
+})
